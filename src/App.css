@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.background {
+    color: rgb(238,174,202);
+    background-color: black;
+    padding: 25px;
+    min-height: 70.8vh;
+    height: auto;
+}
+
+.judul {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+
+.judul h3{
+    text-indent: 2em;
+}
+
+.logo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 6em;
+    margin-right: 2em;
+    margin-top: 2.5em;
+}
+
+.containerPage2 {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.contentWrapperPage2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238,174,202);
+    background-color: black;
+    padding: 40px 40px 60px 40px;
+    border-radius: 20px 0 20px 0;
+    font-family: 'Lobster', cursive;
+}
+
+.contentWrapperPage2 h1 {
+    animation: color 2.5s linear infinite;
+}
+
+@keyframes color {
+    0% {
+        color: rgb(238,174,202);
+    }
+    50% {
+        color: rgba(148,187,233,1);
+    }
+    100% {
+        color: rgb(238,174,202);
+    }
+}
+
+@media only screen and (max-width: 476px){
+    .background {
+        min-height: 67vh;
+    }
+
+    .judul {
+        margin-top: -31px;
+    }
+
+    .judul h1 {
+        text-indent: 30px;
+    }
+
+    .judul h3{
+        text-indent: 0;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .contentWrapperPage2 h1 {
+        margin-left: 60px;
+    }
+
+    .contentWrapperPage2 img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .contentWrapperPage2 {
+        padding: 0 0 50px 0;
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 834px){
+    .background {
+        min-height: 77.1vh;
+    }
+}

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.containterContent {
+    background-color: bisque;
+    min-height: 89.3vh;
+}
+
+.wrapperContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.celebrateTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    animation: color 2.5s linear infinite;
+}
+
+.celebrateTxt h1 {
+    font-size: 7em;
+}
+
+.celebrateTxt h2 {
+    font-size: 5em;
+}
+
+.fotoResponsive {
+    display: none;
+}
+
+.animation {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(5deg)
+    }
+    50% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(5deg)
+    }
+}
+
+.containerPesan {
+    float: right;
+    background-color: black;
+    padding: 20px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+    color: rgb(238,174,202);
+    cursor: pointer;
+}
+
+.iconPesan {
+    font-size: 30px;
+}
+
+.containerPesan:hover{
+    color: rgba(148,187,233,1);
+    transform: scale(1.1);
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(49,49,49,0.8);
+    z-index: 1; /*Bikin modal jadi overlay content di belakangnya*/
+}
+
+.modalContent {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 10px solid rgb(238,174,202);
+    animation: border 2.5s linear infinite;
+    max-width: 600px;
+    min-width: 300px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@keyframes border {
+    0% {
+        border: 10px solid rgb(238,174,202);
+    }
+    50% {
+        border: 10px solid rgba(148,187,233,1);
+    }
+    100% {
+        border: 10px solid rgb(238,174,202);
+    }
+}
+
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closeModal:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 476px){
+    .containterContent {
+        min-height: 89.2vh;
+    }
+
+    .wrapperContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .celebrateTxt h1 {
+        font-size: 3em;
+    }
+
+    .celebrateTxt h2 {
+        font-size: 2.5em;
+    }
+
+    .foto1 {
+        height: 200px;
+        width: 150px;
+    }
+
+    .foto2 {
+        display: none;
+    }
+
+    .fotoResponsive {
+        display: flex;
+        height: 200px;
+        width: 150px;
+    }
+
+    .responsiveImgWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px
+    }
+
+    .containerPesan {
+        margin-top: 35px;
+    }
+
+    .modalContent {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 477px) and (max-width: 840px){
+    .containterContent {
+        min-height: 92.5vh;
+    }
+
+    .wrapperContent {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto1 {
+        height: 300px;
+        width: 250px;
+    }
+
+    .foto2 {
+        display: none;
+    }
+
+    .fotoResponsive {
+        display: flex;
+        height: 300px;
+        width: 250px;
+        transform: rotate(-5deg);
+    }
+
+    .responsiveImgWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerPesan {
+        margin-top: 30px;
+    }
+
+    .modalContent {
+        width: 50vh;
+        height: auto;
+        font-size: 23px;
+    }
+}

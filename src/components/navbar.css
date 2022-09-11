@@ -1,0 +1,39 @@
+.containerNavbar {
+    background-color: black;
+}
+
+.wrapperNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logoNavbar {
+    color: rgb(238,174,202);
+}
+
+.perLogoNavbar {
+    padding: 0 3px;
+    font-size: 2em;
+}
+
+.logoutBtn button {
+    background-color: rgb(238,174,202);
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px;
+    height: 40px;
+    font-weight: 700;
+}
+
+.logoutBtn button:hover {
+    background-color: rgba(148,187,233,1);
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 926px){
+    .wrapperNavbar {
+        padding: 20px 15px;
+    }
+}

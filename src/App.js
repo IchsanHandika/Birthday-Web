@@ -9,7 +9,7 @@ import kue from './components/Assets/kue.gif'
 
 function App() {
   const account = {
-    password: 10011
+    password: "admin123"
   }
 
   const [user, setUser] = useState({password: ''})

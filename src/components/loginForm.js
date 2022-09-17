@@ -18,7 +18,7 @@ const LoginForm = ({login}) => {
                         {...details, password: e.target.value}
                     )} value = {details.password} />
                 </label>
-                <p>Hint : umur 'kamu' sekarang dalam biner</p>
+                <p>Hint : cari aja di inspect</p>
                 <button type = "submit">Submit!</button>
             </form>
         </div>
